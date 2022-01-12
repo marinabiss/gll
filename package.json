@@ -1,0 +1,17 @@
+{
+  "name": "sass",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "npx node-sass --include-path node_modules --output-style compressed src/sass/theme.sass > public/build/theme.css",
+    "sass:watch": "npx node-sass --watch --include-path node_modules --output-style compressed src/sass/theme.sass > public/build/theme.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^7.0.1"
+  }
+}
