@@ -43,7 +43,7 @@ ul {
 .wrapper {
   display: grid;
   min-height: 100vh;
-  grid-template: minmax(100px, auto) 1fr minmax(70px, auto)/1fr;
+  grid-template: 100px minmax(0px, auto) minmax(0px, auto) 1fr 100px/1fr;
   grid-template-areas: "header" "banner_up" "banner" "main" "footer";
 }
 
@@ -141,7 +141,6 @@ ul {
 
   .banner_up {
     grid-area: banner_up;
-    	height: fit-content;
     display: grid;
     padding: 0px 0px 0px 0px;
     grid-template-columns: 95px minmax(auto, 300px) minmax(auto, 900px) minmax(auto, 700px) 1fr;
