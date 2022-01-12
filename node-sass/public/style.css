@@ -43,7 +43,7 @@ ul {
 .wrapper {
   display: grid;
   min-height: 100vh;
-  grid-template: 100px minmax(0px, auto) minmax(0px, auto) 1fr 100px/1fr;
+  grid-template: 100px minmax(0px, auto) minmax(0px, auto) 1fr minmax(0px, auto)/1fr;
   grid-template-areas: "header" "banner_up" "banner" "main" "footer";
 }
 
@@ -53,6 +53,12 @@ ul {
 
 .icons img {
   width: 80px;
+}
+
+.image {
+  width: 100%;
+  /*height: 100%;*/
+  object-fit: cover;
 }
 
 @media (min-width: 1201px) {
@@ -66,6 +72,12 @@ ul {
     display: grid;
     grid-column: 2/3;
     padding: 0px 0px 30px 0px;
+  }
+
+  .image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 
   .banner {
@@ -109,7 +121,6 @@ ul {
   .banner section:nth-child(4) {
     grid-column: 1/6;
     grid-row: 1;
-    background-color: #e0e0e0;
   }
 
   .banner .icons {
@@ -144,7 +155,7 @@ ul {
     display: grid;
     padding: 0px 0px 0px 0px;
     grid-template-columns: 95px minmax(auto, 300px) minmax(auto, 900px) minmax(auto, 700px) 1fr;
-    grid-template-rows: 50px minmax(auto, 250px) 50px;
+    grid-row: 1fr minmax(auto, 250px) 1fr;
   }
 
   .banner_up section:nth-child(1) {
@@ -156,9 +167,6 @@ ul {
   .banner_up section:nth-child(2) {
     grid-column: 1/6;
     grid-row: 1/4;
-    background-image: url("/img/warehouse3.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
   }
 
   .banner_up section:nth-child(3) {
@@ -202,6 +210,11 @@ ul {
     padding: 0px 0px 30px 0px;
   }
 
+  .image {
+    width: 100%;
+    object-fit: cover;
+  }
+
   .banner {
     grid-area: banner;
     display: grid;
@@ -277,7 +290,7 @@ ul {
     display: grid;
     padding: 0px 0px 0px 0px;
     grid-template-columns: 95px minmax(auto, 300px) minmax(auto, 900px) minmax(auto, 700px) 1fr;
-    grid-template-rows: 50px minmax(auto, 250px) 50px;
+    grid-row: 1fr minmax(auto, 250px) 1fr;
   }
 
   .banner_up section:nth-child(1) {
@@ -289,9 +302,6 @@ ul {
   .banner_up section:nth-child(2) {
     grid-column: 1/6;
     grid-row: 1/4;
-    background-image: url("/img/warehouse3.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
   }
 
   .banner_up section:nth-child(3) {
@@ -406,7 +416,7 @@ ul {
     display: grid;
     padding: 0px 0px 0px 0px;
     grid-template-columns: 95px minmax(auto, 300px) minmax(auto, 900px) minmax(auto, 700px) 1fr;
-    grid-template-rows: 50px minmax(auto, 250px) 50px;
+    grid-row: 1fr minmax(auto, 250px) 1fr;
   }
 
   .banner_up section:nth-child(1) {
@@ -418,9 +428,6 @@ ul {
   .banner_up section:nth-child(2) {
     grid-column: 1/6;
     grid-row: 1/4;
-    background-image: url("/img/warehouse3.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
   }
 
   .banner_up section:nth-child(3) {
@@ -543,7 +550,7 @@ ul {
     display: grid;
     padding: 0px 0px 0px 0px;
     grid-template-columns: 10px minmax(auto, 700px) 10px;
-    grid-template-rows: 50px minmax(auto, 250px) 50px;
+    grid-row: 1fr minmax(auto, 250px) 1fr;
   }
 
   .banner_up section:nth-child(1) {
@@ -555,9 +562,6 @@ ul {
   .banner_up section:nth-child(2) {
     grid-column: 1/4;
     grid-row: 1/4;
-    background-image: url("/img/warehouse3.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
   }
 
   .banner_up section:nth-child(3) {
@@ -638,7 +642,7 @@ ul {
     display: grid;
     padding: 0px 0px 0px 0px;
     grid-template-columns: 10px minmax(auto, 460px) 10px;
-    grid-template-rows: 50px minmax(auto, 250px) 50px;
+    grid-row: 1fr minmax(auto, 250px) 1fr;
   }
 
   .banner_up section:nth-child(1) {
@@ -650,9 +654,6 @@ ul {
   .banner_up section:nth-child(2) {
     grid-column: 1/4;
     grid-row: 1/4;
-    background-image: url("/img/warehouse3.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
   }
 
   .banner_up section:nth-child(3) {
@@ -681,6 +682,11 @@ ul {
 
   canvas {
     display: none;
+  }
+
+  .image {
+    height: 100%;
+    object-fit: cover;
   }
 }
 .content_items {
@@ -831,5 +837,7 @@ ul {
   position: relative;
   top: 2px;
 }
+
+/*# sourceMappingURL=style.css.map */
 
 /*# sourceMappingURL=style.css.map */
