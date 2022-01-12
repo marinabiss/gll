@@ -109,6 +109,7 @@ ul {
   .banner section:nth-child(4) {
     grid-column: 1/6;
     grid-row: 1;
+    background-color: #e0e0e0;
   }
 
   .banner .icons {
