@@ -141,6 +141,7 @@ ul {
 
   .banner_up {
     grid-area: banner_up;
+    	height: fit-content;
     display: grid;
     padding: 0px 0px 0px 0px;
     grid-template-columns: 95px minmax(auto, 300px) minmax(auto, 900px) minmax(auto, 700px) 1fr;
