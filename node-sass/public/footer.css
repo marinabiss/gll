@@ -39,6 +39,7 @@
 
   .footer__text {
     order: 3;
+    text-align: right;
   }
 }
 
