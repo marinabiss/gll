@@ -1,3 +1,188 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Визитка — Современный сайт</title>
+    <meta name="description" content="Персональный сайт-визитка: обо мне, услуги и контакты." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#about">Перейти к содержимому</a>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="#home" class="brand">
+          <span class="brand-mark" aria-hidden="true">◆</span>
+          <span class="brand-text">Моё Имя</span>
+        </a>
+        <button class="nav-toggle" aria-label="Открыть меню" aria-expanded="false">
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+        </button>
+        <nav class="site-nav" aria-label="Основная навигация">
+          <ul>
+            <li><a href="#about">Обо мне</a></li>
+            <li><a href="#services">Услуги</a></li>
+            <li><a href="#contact">Контакты</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="home">
+      <section class="hero" aria-label="Вводная секция">
+        <div class="container hero-inner">
+          <div class="hero-badge reveal" data-delay="0">
+            Доступен к сотрудничеству
+          </div>
+          <h1 class="hero-title reveal" data-delay="100">Привет! Я создаю современные и быстрые сайты</h1>
+          <p class="hero-subtitle reveal" data-delay="150">
+            Помогаю бизнесам и личным брендам выделяться в интернете: от идеи до запуска.
+          </p>
+          <div class="hero-cta reveal" data-delay="200">
+            <a class="button primary" href="#contact">Связаться</a>
+            <a class="button ghost" href="#services">Посмотреть услуги</a>
+          </div>
+          <div class="hero-art" aria-hidden="true">
+            <span class="orb orb-1"></span>
+            <span class="orb orb-2"></span>
+            <span class="orb orb-3"></span>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section" aria-label="Обо мне">
+        <div class="container grid-2col">
+          <div class="card glass reveal">
+            <div class="avatar">
+              <svg viewBox="0 0 64 64" role="img" aria-label="Аватар">
+                <circle cx="32" cy="32" r="32" fill="url(#g)" />
+                <defs>
+                  <linearGradient id="g" x1="0" x2="1" y1="0" y2="1">
+                    <stop offset="0%" stop-color="#8ec5fc" />
+                    <stop offset="100%" stop-color="#e0c3fc" />
+                  </linearGradient>
+                </defs>
+                <circle cx="32" cy="24" r="10" fill="#ffffff" opacity="0.9" />
+                <rect x="16" y="38" width="32" height="16" rx="8" fill="#ffffff" opacity="0.9" />
+              </svg>
+            </div>
+            <h2>Обо мне</h2>
+            <p>
+              Я специализируюсь на разработке адаптивных веб‑сайтов с акцентом на
+              производительность, доступность и визуальную выразительность. Люблю
+              чистые интерфейсы и понятный UX.
+            </p>
+            <ul class="tags">
+              <li>UI/UX</li>
+              <li>Frontend</li>
+              <li>Анимации</li>
+              <li>SEO</li>
+            </ul>
+          </div>
+
+          <div class="card gradient reveal" data-delay="100">
+            <h3>Почему со мной удобно работать</h3>
+            <ul class="list">
+              <li><strong>Сроки</strong> — четкие этапы и прозрачные дедлайны</li>
+              <li><strong>Качество</strong> — дизайн‑система и единые гайды</li>
+              <li><strong>Скорость</strong> — быстрая загрузка и оптимизация</li>
+              <li><strong>Поддержка</strong> — не бросаю после релиза</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="services" class="section" aria-label="Услуги">
+        <div class="container">
+          <h2 class="section-title reveal">Услуги</h2>
+          <div class="services-grid">
+            <article class="service-card reveal">
+              <div class="service-icon" aria-hidden="true">⚡</div>
+              <h3>Сайт‑визитка</h3>
+              <p>Стильная страница о вас или вашем бизнесе. Быстрый старт.</p>
+            </article>
+            <article class="service-card reveal" data-delay="50">
+              <div class="service-icon" aria-hidden="true">🧩</div>
+              <h3>Лендинг</h3>
+              <p>Целевая страница для продукта или услуги с высокой конверсией.</p>
+            </article>
+            <article class="service-card reveal" data-delay="100">
+              <div class="service-icon" aria-hidden="true">🚀</div>
+              <h3>Оптимизация</h3>
+              <p>Ускорение, SEO и доступность для уже существующих проектов.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section" aria-label="Контакты">
+        <div class="container grid-2col">
+          <div class="card glass reveal">
+            <h2>Свяжитесь со мной</h2>
+            <p>
+              Опишите задачу — отвечу в ближайшее время и предложу оптимальный формат работы.
+            </p>
+
+            <ul class="contacts">
+              <li>
+                <a href="mailto:hello@example.com">hello@example.com</a>
+              </li>
+              <li>
+                <a href="https://t.me/username" target="_blank" rel="noreferrer noopener">Telegram</a>
+              </li>
+              <li>
+                <a href="https://wa.me/70000000000" target="_blank" rel="noreferrer noopener">WhatsApp</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="card reveal" data-delay="100">
+            <form id="contact-form" novalidate>
+              <div class="field">
+                <label for="name">Имя</label>
+                <input id="name" name="name" type="text" autocomplete="name" required />
+                <small class="error" data-for="name"></small>
+              </div>
+              <div class="field">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" autocomplete="email" required />
+                <small class="error" data-for="email"></small>
+              </div>
+              <div class="field">
+                <label for="message">Сообщение</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                <small class="error" data-for="message"></small>
+              </div>
+              <div class="form-actions">
+                <button class="button primary" type="submit">Отправить</button>
+              </div>
+              <p class="form-success" role="status" aria-live="polite" hidden>
+                Спасибо! Сообщение отправлено.
+              </p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>© <span id="year"></span> Моё Имя. Все права защищены.</p>
+      </div>
+    </footer>
+
+    <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+
+    <script src="./script.js"></script>
+  </body>
+  </html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
